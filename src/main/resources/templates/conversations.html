@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>========================chat display for <span th:text="${customer.firstName +' '+customer.surname}"></span>============================
+</p><a th:href="@{/refresh/{id}(id = ${customer.id})}">REFRESH</a>
+<table id="example2" class="table table-bordered table-striped"
+       th:object="${messages}">
+    <tbody>
+    <tr th:each="message: ${messages}">
+        <th:block th:if="${#strings.equals(message.sentBy.userType,'STAFF')}">
+            <td align="left"><span style="white-space: pre;" th:text="${message.message} "></span>
+            </td>
+            <td align="left"><span th:text="                             ${message.time}"></span>
+            </td>
+        </th:block>
+        <th:block th:if="${#strings.equals(message.sentBy.userType,'CUSTOMER')}">
+            <td align="right"><span style="white-space: pre;" th:text="${message.message}">Right</span></td>
+            <td align="right"><span th:text="${message.time}"></span></td>
+        </th:block>
+    </tr>
+    </tbody>
+</table>
+
+<p>========================log display ============================<br/><br/>
+    ==========================Customer input for John Doe</p>
+<form method="post" th:action="@{/conversations/{id}(id = ${customer.id})}" th:object="${form}">
+    <textarea name="message" th:field="*{message}" rows="5" cols="20" th:value="*{message}"/>
+    <button class="pull-right btn btn-primary button" id="sendEmail"
+            type="submit">Save
+    </button>
+</form>
+<p>================================================================================</p>
+</body>
+</html>

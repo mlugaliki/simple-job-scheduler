@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.jobscheduler.example.JobSchedulerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.342 s <<< FAILURE! - in com.jobscheduler.example.JobSchedulerApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerFactoryBean' defined in class path resource [com/jobscheduler/example/configurations/QuartzConfig.class]: Invocation of init method failed; nested exception is org.quartz.SchedulerException: Driver not specified for DataSource: quartzDataSource
+Caused by: org.quartz.SchedulerException: Driver not specified for DataSource: quartzDataSource
+

@@ -1,0 +1,17 @@
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/repositories/MessageRepository.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/models/People.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/JobSchedulerApplication.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/models/Workflow.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/types/MessageStep.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/models/Message.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/controllers/HomeController.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/services/PeopleService.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/types/UserType.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/configurations/QuartzConfig.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/quartz/MessageJob.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/configurations/AutowiringSpringBeanJobFactory.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/Templates.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/repositories/PeopleRepository.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/models/MessageDto.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/services/MessageService.java
+/Users/martin.lugaliki/java-projects/workspace-test/JobScheduler/src/main/java/com/jobscheduler/example/components/Initializer.java

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>================================================================================<br/>
+USER INTERFACE                                                            </p>
+<table id="example2" class="table table-bordered table-striped"
+       th:object="${customers}">
+    <thead class="header">
+    <tr>
+        <th>Customer list<br/>
+            =============</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${customers == null}">
+        <td colspan="2">No customer available</td>
+    </tr>
+    <tr th:each="customer: ${customers}">
+        <td th:text="${customer.id +' '+customer.firstName +' '+ customer.surname +' '+customer.lastName}"></td>
+        <td><a th:href="@{/conversations/{id}(id = ${customer.id})}">START CONVERSATION</a></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+</body>
+</html>
